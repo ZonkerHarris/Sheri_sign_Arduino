@@ -1,0 +1,76 @@
+/* Prepare the colors array
+ myBase is modulo 15, with R-G-B values, from brightest to dimmest
+ 0=white, 15=red, 30=yellow, 45=green, 60=blue, 75=teal, 90=purple
+ value 135=black (all zeroes).
+ myColorCode is modulo 3, defining one shade of a given color in R-G-B.
+ You can use any modulo-3 number in the array, from 0 (white) to 135 (black).
+ 18=almost-brightest red, 51 is medium-green, 72 is dimmest-blue. */
+int myColors[] = {
+  //(0) grays
+  1023, 1023, 1023,
+  800, 800, 800,
+  600, 600, 600,
+  400, 400, 400,
+  200, 200, 200,
+  //(1,15) salmon, brite orange
+  1023, 310, 0,
+  875, 190, 0,
+  580, 100, 0,
+  300, 50, 0,
+  60, 10, 0,
+  //(2,30) brite green-yellow
+  650, 1023, 0,
+  560, 850, 0,
+  440, 610, 0,
+  235, 355, 0,
+  60, 75, 0,
+  //(3,45) sea green
+  0, 1023, 95,
+  0, 850, 80,
+  0, 600, 65,
+  0,330, 35,
+  0, 75, 15,
+  //(4,60) brite yellow
+  1023, 1023, 0,
+  880, 880, 0,
+  575, 575, 0,
+  280, 280, 0,
+  75, 75, 0,
+  //(5,75) sky blue
+  0, 1023, 500,
+  0, 890, 390,
+  0, 650, 235,
+  0, 375, 125,
+  0, 70, 30,
+  //(6,90) teal
+  0, 1023, 125,
+  0, 875, 100,
+  0, 670, 75,
+  0, 325, 45,
+  0, 85, 10,
+  //(7,105) violet 1
+  330, 0, 1023,
+  240, 0, 850,
+  180, 0, 630,
+  100, 0, 370,
+  30, 0, 95,
+  //(8,120) violet 2
+  1023, 0, 700,
+  850, 0, 590,
+  530, 0, 350,
+  260, 0, 130,
+  75, 0, 30,
+  //(9,135) yellow 2
+  1023, 700, 0,
+  790, 565, 0,
+  450, 270, 0,
+  220, 140, 0,
+  50, 40, 0,
+  //(10,150) fuschia
+  1023, 0, 185,
+  880, 0, 170,
+  540, 0, 105,
+  180, 0, 40,
+  40, 0, 10,
+  //(11,165) black
+  0};
